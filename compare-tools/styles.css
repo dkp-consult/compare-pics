@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  width: 80vw;
+  height: 80vh;
+  background-color: skyblue;
+  margin-right: 10vw;
+  margin-left: 10vw;
+  overflow: hidden; /*need to fix that shit*/
+}
+
+header {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10vh;
+  background-color: yellow;
+  width: 80vw;
+  text-align: center;
+}
+.section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 500px;
+}
+
+.img-comp-container {
+  position: relative ;
+  height: 500px; /*should be the same height as the images*/
+  top: 20%; /*need to fix that shit*/
+  left: 35%; /*need to fix that shit*/
+}
+
+.img-comp-img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.img-comp-img img {
+  display: block;
+  vertical-align: middle;
+}
+
+.img-comp-slider {
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 40px;
+  height: 40px;
+  background-color: #2196F3;
+  opacity: 0.7;
+  border-radius: 50%;
+}
+footer {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: yellow;
+  width: 80vw;
+  text-align: center;
+}
