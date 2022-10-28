@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>100 Days css canvas</title>
+
+  <style>
+  .frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+    background: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+  }
+
+  .stripes {
+    position: relative;
+    top: -67px;
+    left: -100px;
+    width: 600px;
+    transform: rotate(45deg);
+  }
+  .stripes .stripe {
+    background: #353535;
+    width: 600px;
+    height: 3px;
+    margin-bottom: 16px;
+  }
+
+  .center {
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    top: 70px;
+    left: 70px;
+    background: #353535;
+    border-radius: 3px;
+    box-shadow: 8px 10px 15px 0 rgba(0, 0, 0, 0.3);
+  }
+
+  .polygon {
+    position: absolute;
+    width: 160px;
+    height: 140px;
+    top: 60px;
+    left: 50px;
+  }
+  .polygon .light {
+    fill: #eee;
+    transition: all 0.5s ease-in-out;
+  }
+  .polygon .middle {
+    fill: #ccc;
+    transition: all 0.5s ease-in-out;
+  }
+  .polygon .dark {
+    fill: #aaa;
+    transition: all 0.5s ease-in-out;
+  }
+  .polygon:hover .light {
+    fill: #aaa;
+  }
+  .polygon:hover .middle {
+    fill: #eee;
+  }
+  .polygon:hover .dark {
+    fill: #ccc;
+  }
+  </style>
+
+  <script>
+  /* Paste script here */
+  </script>
+
+</head>
+<body>
+  <div class="frame">
+    <div class="stripes">
+      <div class="stripe"></div>
+      <div class="stripe"></div>
+      <div class="stripe"></div>
+      <div class="stripe"></div>
+      <div class="stripe"></div>
+      <div class="stripe"></div>
+      <div class="stripe"></div>
+      <div class="stripe"></div>
+      <div class="stripe"></div>
+      <div class="stripe"></div>
+      <div class="stripe"></div>
+      <div class="stripe"></div>
+      <div class="stripe"></div>
+      <div class="stripe"></div>
+      <div class="stripe"></div>
+      <div class="stripe"></div>
+      <div class="stripe"></div>
+      <div class="stripe"></div>
+      <div class="stripe"></div>
+      <div class="stripe"></div>
+      <div class="stripe"></div>
+      <div class="stripe"></div>
+      <div class="stripe"></div>
+      <div class="stripe"></div>
+      <div class="stripe"></div>
+      <div class="stripe"></div>
+      <div class="stripe"></div>
+      <div class="stripe"></div>
+      <div class="stripe"></div>
+    </div>
+    <div class="center">
+      <svg class="polygon"><polygon class="middle" points="68,0 91,0 160,117 46,117 59,93 121,93" /><polygon class="dark" points="68,41 79,59 46,117 160,117 147,160 11,140" /><polygon class="light" points="0,117 68,0 121,93 98,93 68,41 11,140" /></svg>
+    </div>
+  </div>
+</body>
+</html>

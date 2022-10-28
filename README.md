@@ -40,6 +40,7 @@ Et petit à petit, je pense à des choses qui seraient pratique à mettre en pla
 - Expliquer le fonctionnement et essayer de le rendre le + simple possible
 - Créer le carnet de bord de mon apprentissage dans cette idée
 - Convertir automatiquement le SCSS en CSS dans une balise style ?
+- WARNING : Les scripts JS ne fonctionnent pas tous. Il faut finir d'importer tout et chercher la cause.
 
 # Piste d'amélioration :
 
