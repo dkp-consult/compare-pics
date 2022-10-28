@@ -39,6 +39,7 @@ Et petit à petit, je pense à des choses qui seraient pratique à mettre en pla
 - Faire une présentation plus jolie et lisible
 - Expliquer le fonctionnement et essayer de le rendre le + simple possible
 - Créer le carnet de bord de mon apprentissage dans cette idée
+- Convertir automatiquement le SCSS en CSS dans une balise style ?
 
 # Piste d'amélioration :
 
@@ -50,6 +51,7 @@ Et petit à petit, je pense à des choses qui seraient pratique à mettre en pla
 - Trouver d'autre chose à implémenter
 - Table des matières pour README
 - Synthèse des apprentissage lié au projet
+- Superposition des layouts avec animation ; opacity => NOK
 
 # Problème à régler :
 
