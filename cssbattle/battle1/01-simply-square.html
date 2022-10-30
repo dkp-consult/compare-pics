@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSSBattle canvas</title>
+  <style>
+    :root {
+      --image: url("https://cssbattle.dev/targets/1.png")
+    }
+
+    html,
+    body {
+      font-size: 18px;
+      color: hsl(0 0% 100% / .4);
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, 400px);
+      justify-content: center;
+      gap: 40px 20px;
+      background: hsl(235 19% 13%);
+      padding-top: 40px;
+      font-family: sans-serif;
+    }
+
+    #main::after {
+      display: none;
+    }
+
+    .canvas {
+      width: 400px;
+      height: 300px;
+      position: relative;
+    }
+
+    .canvas::before {
+      position: absolute;
+      top: -1.4rem;
+      left: 0;
+    }
+
+    #main::before {
+      content: 'Rendu';
+    }
+
+    .ref::before {
+      content: 'Référence';
+    }
+
+    .diff::before {
+      content: 'Différence';
+    }
+
+    .overlay::before {
+      content: 'Superposition';
+    }
+
+    .canvas::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: var(--image) center center / 100% 100% no-repeat;
+    }
+
+    .overlay::after {
+      opacity: .2;
+    }
+
+    .diff::after {
+      mix-blend-mode: difference;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="canvas" id="main">
+
+    <!-- Le challenge commence ici -->
+
+    <div class="demo"></div>
+
+    <!-- / Fin challenge -->
+
+  </div>
+  <div class="canvas ref"></div>
+  <div class="canvas diff"></div>
+  <div class="canvas overlay"></div>
+  <script>
+    const sourceHTML = document.querySelector('#main').innerHTML
+
+    document.querySelectorAll('.canvas').forEach(c => {
+      c.innerHTML = sourceHTML
+    })
+  </script>
+</body>
+
+</html>
