@@ -8,7 +8,7 @@
   <title>CSSBattle canvas</title>
   <style>
     :root {
-      --image: url("https://cssbattle.dev/targets/6.png")
+      --image: url("https://cssbattle.dev/targets/7.png")
     }
 
     html,
@@ -80,50 +80,15 @@
 
 <body>
   <div class="canvas" id="main">
-
+  
+    <style>
+      .canvas {
+        background-color: #0B2429;
+      }
+    </style>
     <!-- Le challenge commence ici -->
 
-    <div class="slice">
-    </div>
-
-  <style>
-    .canvas {
-      background-color: #E3516E;
-    }
-    .slice {
-      width : 100px;
-      height: 100px;
-      background-color: #51B5A9;
-      border-radius: 0 0 0 100%;
-      position: absolute;
-      top: 50px;
-      left: 100px;
-      transform: rotate(90deg);
-    }
-    .slice::before {
-      display: block;
-      content: ' ';
-      background-color: #F7F3D7;
-      transform: rotate(90deg);
-      position: absolute;
-      left: 100px;
-      height: 100px;
-      aspect-ratio: 1/1;
-      border-radius: 0 100% 0 0;
-      }
-      .slice::after {
-        content: '';
-        display: block;
-        width : 100px;
-        height: 100px;
-        background-color: #FADE8B;
-        border-radius: 0 0 0 100%;
-        position: absolute;
-        top: -100px;
-        left: 0px;
-        transform: rotate(90deg) ;
-      }
-  </style>
+    <div class="demo"></div>
 
     <!-- / Fin challenge -->
 
